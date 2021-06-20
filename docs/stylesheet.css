@@ -1,0 +1,265 @@
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+body {
+    margin:auto;
+}
+
+#divkeyinput,
+#divmessageinput {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+#curesinlogodiv {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 95%;
+    
+}
+
+#togglelegend {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+}
+
+#curesinlogo {
+    height: 80px;
+}
+
+.socialcom{
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.socialcom:hover{
+    opacity: 0.5;
+}
+
+.curesincom {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 95%;
+}
+
+#message {
+    resize: none;
+}
+
+#key,
+#message {
+    text-align: center;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+}
+
+#key:focus,
+#message:focus {
+    outline: none;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 95%;
+    height: 50pt;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#thefilterdiv {
+    position: static;
+    height: 1px;
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 40pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+/* Button */
+
+#buttondiv {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    outline: none;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 20px 40px;
+    border: 5px solid #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-6 {
+    background: #000;
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #000;
+}
+
+.btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover {
+    color: #000;
+    background: transparent;
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content: "";
+    background: #000;
+}
+
+.btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+    width: 100%;
+}
+
+.btn-6 span:hover:after {
+    width: 100%;
+}
+
+
+/* Toggle */
+
+.container {
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/** Switch
+-------------------------------------*/
+
+.switch #toggleinput {
+    position: absolute;
+    opacity: 0;
+}
+
+.switch {
+    display: inline-block;
+    font-size: 20px;
+    /* 1 */
+    height: 1em;
+    width: 2em;
+    background: rgba(142, 142, 142, 0.3);
+    border-radius: 1em;
+}
+
+.switch #togglediv {
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0.1em 0.3em rgba(142, 142, 142, 0.3);
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.switch #toggleinput:checked+#togglediv {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="thefilterdiv">
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    <div id="divkeyinput">
+        <input id="key" type="password" placeholder="key" deneme>
+    </div>
+    <div id="divmessageinput">
+        <form><textarea rows="5" id="message" type="text" placeholder="message"></textarea></form>
+    </div>
+    <div class="container">
+        <label class="switch"><input id="toggleinput" type="checkbox" />
+            <div id="togglediv"></div>
+        </label>
+    </div>
+    <div id="togglelegend">decrypt | encrypt</div>
+
+    <div id="buttondiv"><button class="custom-btn btn-6" onclick= "cryptoDo()" ><span id="run">run</span></button></div>
+    <div id="curesinlogodiv">
+        <img id="curesinlogo" src="/img/curesinlogo.png">
+        <div class="curesincom">cagatayuresin</div>
+        <div>
+            <tr>
+                <td><a  href="https://twitter.com/cagatayuresin" target="_blank"><img class="socialcom" src="/img/twittericon65.png"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/cagatayuresin/" target="_blank"><img class="socialcom" src="/img/instagramicon65.png" ></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/in/cagatayuresin/" target="_blank"><img class="socialcom" src="/img/linkedinicon65.png"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/channel/UCoRQRnEjfym6PC5bLN9Gy8w" target="_blank"><img class="socialcom" src="/img/youtubeicon65.png"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/cagatayuresin" target="_blank"><img class="socialcom" src="/img/githubicon65.png"></a></td>
+            </tr>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
