@@ -6,6 +6,7 @@ function langSet() {
         document.getElementById("message").placeholder = "mesaj";
         document.getElementById("togglelegend").innerHTML = "çöz | boz";
         document.getElementById("run").innerHTML = "çalıştır";
+        document.title = "wowsignal | şifreleme";
     }
 }
 langSet()

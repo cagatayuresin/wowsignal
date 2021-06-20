@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
 body {
-    margin:auto;
+    margin: auto;
 }
 
 #divkeyinput,
@@ -13,7 +13,7 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    
+
 
 }
 
@@ -23,7 +23,7 @@ body {
     margin-right: auto;
     margin-top: 80px;
     width: 95%;
-    
+
 }
 
 #togglelegend {
@@ -40,13 +40,13 @@ body {
     height: 80px;
 }
 
-.socialcom{
+.socialcom {
     width: 20px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.socialcom:hover{
+.socialcom:hover {
     opacity: 0.5;
 }
 
